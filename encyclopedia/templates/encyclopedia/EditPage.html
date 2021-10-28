@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+{%load crispy_forms_tags %}
+
+{% block title %}
+    Edit Page
+{% endblock %}
+
+{% block body %}
+   <h1>Edit Page:</h1>
+    <form action="{% url 'saveEdit' %}" method="post">
+        {% csrf_token %}
+        <label for="ntitle"><h2>Title:</h2></label><br>
+        <input minlength="400" id="ntitle" type="text" name="newtitle" value="{{title}}">
+        <br><label for="ncontent"><h2>Content:</h2></label><br>
+        <textarea id="ncontent" name="newcontent">{{content}}</textarea>
+        <br>
+        <input type="submit">
+    </form>
+{% endblock %}
