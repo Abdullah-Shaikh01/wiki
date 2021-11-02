@@ -12,8 +12,10 @@
         <label for="ntitle"><h2>Title:</h2></label><br>
         <input minlength="400" id="ntitle" type="text" name="newtitle" value="{{title}}">
         <br><label for="ncontent"><h2>Content:</h2></label><br>
-        <textarea id="ncontent" name="newcontent">{{content}}</textarea>
-        <br>
+        <div>
+            <textarea id="ncontent" name="newcontent">{{content}}</textarea>
+            <br>
+        </div>
         <input type="submit">
     </form>
 {% endblock %}

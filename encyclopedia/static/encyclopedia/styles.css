@@ -36,3 +36,12 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+
+#ncontent {
+    height: 500px;
+    width: 650px;
+}
+
+#ntitle {
+    width: 650px;
+}
